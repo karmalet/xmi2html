@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+tr, td { border: 1px solid black; }
+tr { cursor:pointer; }
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="./tree.js"></script>
+</head>
+
+<body>
+    <div id="div1" style="float:left; margin-right:50px;">
+        <select id="xmi1" onchange="changeXmi(this.value, '1');"></select>
+        <div id="demo1"></div>
+        <div id="body1"></div>
+    </div>
+
+    <div id="div2">
+        <select id="xmi2" onchange="changeXmi(this.value, '2');"></select>
+        <div id="demo2"></div>
+        <div id="body2"></div>
+    </div>
+</body>
+<!--
+<body id="body">
+<div id="demo">
+<table border="0">
+  <tr class="master header">
+    <th id="demo">contents</th>
+  </tr>
+  <tbody id="list">
+
+  </tbody>
+
+</table>
+</body>
+-->
+</html>
